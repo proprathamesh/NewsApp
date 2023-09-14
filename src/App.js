@@ -5,7 +5,7 @@ import LoadingBar from 'react-top-loading-bar'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default class App extends Component {
-    api_key = process.env.REACT_APP_API_KEY
+    api_key = '6898be525c1d49609735e3b00ebacbe7'
     state = {
         progress: 10,
     }
