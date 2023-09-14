@@ -3,6 +3,7 @@ import React, { Component } from "react";
 export default class NewsItems extends Component {
     render() {
         let {tittle, description, imageUrl, url} = this.props;
+        console.log(tittle)
         let ago = this.props.date;
         let d = new Date(ago);
         let hours = d.getHours();
