@@ -25,7 +25,7 @@ export default class App extends Component {
                         progress= {this.state.progress}
                     />
                     <Routes>
-                        <Route exact index element={<News api_key={this.api_key} setProgress={this.setProgress} key="general" psize={6} category = "general" />} />
+                        <Route exact path="/index.html" element={<News api_key={this.api_key} setProgress={this.setProgress} key="general" psize={6} category = "general" />} />
                         <Route exact path="/entertainment" element={<News api_key={this.api_key} setProgress={this.setProgress} key="entertainment" psize={6} category = "entertainment" />}/>
                         <Route exact path="/business" element={<News api_key={this.api_key} setProgress={this.setProgress} key="business" psize={6} category = "business" />}/>
                         <Route exact path="/general" element={<News api_key={this.api_key} setProgress={this.setProgress} key="general" psize={6} category = "general" />}/>

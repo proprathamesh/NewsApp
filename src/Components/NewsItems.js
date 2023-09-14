@@ -22,7 +22,7 @@ export default class NewsItems extends Component {
                             <a href={url} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary mx-2">
                                 Read article
                             </a>
-                            <a href={"/views.html"} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary mx-2">
+                            <a href={"/"} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary mx-2">
                                 Public Views
                             </a>
                         </div>
