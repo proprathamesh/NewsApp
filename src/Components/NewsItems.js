@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export default class NewsItems extends Component {
     render() {
-        let {tittle, description, imageUrl, url, date} = this.props;
+        let {tittle, description, imageUrl, url} = this.props;
         let ago = this.props.date;
         let d = new Date(ago);
         let hours = d.getHours();
@@ -18,10 +18,10 @@ export default class NewsItems extends Component {
                         </p>
                         <p className="card-text"><small className="text-body-secondary">Last updated {hours>=24? days: hours} {hours>=24? "day": "hours"} ago</small></p>
                         <div className="d-flex justify-content-evenly">
-                            <a href={url} target="_blank" className="btn btn-sm btn-primary mx-2">
+                            <a href={url} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary mx-2">
                                 Read article
                             </a>
-                            <a href={"/views.html"} target="_blank" className="btn btn-sm btn-primary mx-2">
+                            <a href={"/views.html"} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary mx-2">
                                 Public Views
                             </a>
                         </div>
